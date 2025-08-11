@@ -1,6 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import './styles.css';
 
 export default function Home() {
+  const [showRakuten, setShowRakuten] = useState(true);
+  const [showAXAS, setShowAXAS] = useState(true);
+  const [showShiftAsia, setShowShiftAsia] = useState(true);
+
   return (
     <div className="font-sans bg-gray-50 min-h-screen flex justify-center py-10 px-4">
       <div className="bg-white shadow-lg rounded-lg max-w-2xl w-full p-8">
@@ -70,61 +77,127 @@ export default function Home() {
           <h2 className="text-xl font-semibold border-b pb-1 mb-2">
             Work Experience
           </h2>
+          {/* Rakuten Payment */}
           <div className="mb-4">
-            <h3 className="font-bold text-gray-900">Rakuten Payment, Inc. | Tokyo</h3>
+            <div
+              className="flex items-center gap-2 cursor-pointer hover:underline"
+              onClick={() => setShowRakuten((v) => !v)}
+            >
+              <span className={`transition-transform duration-200 ${showRakuten ? "rotate-90" : ""}`}>
+                ▶
+              </span>
+              <h3 className="font-bold text-gray-900">
+                Rakuten Payment, Inc. | Tokyo
+              </h3>
+              <button
+                className="ml-2 text-xs text-blue-600 underline focus:outline-none"
+                tabIndex={-1}
+                aria-label={showRakuten ? "Hide details" : "Show details"}
+              >
+                {showRakuten ? "Hide details" : "Show details"}
+              </button>
+            </div>
             <p className="italic text-gray-700">October 2021 - present</p>
-            <span className="font-semibold text-gray-900">
-              Software QA Engineer - Permanent (March 2024 - present)
-            </span>
-            <br />
-            <span className="font-semibold text-gray-900">
-              Software QA Engineer - Temporary (October 2021 - February 2024)
-            </span>
-            <div className="ml-5 text-gray-800 space-y-1 mt-1">
-              <div>- Analyzed AI-generated backend API IT test cases to assess coverage and quality, collaborating with developers to enhance the AI testing tool.</div>
-              <div>- Led Agile QA teams (Manual & Automation), planned testing, developed automation, and communicated directly with stakeholders.</div>
-              <div>- Automated and maintained scripts for 24/7 testing of R Pay&apos;s Android app barcode payment system, leveraging Robotic ARM technology for barcode scanning and API integration for payment processing, to ensure system stability.</div>
-              <div>- Designed and implemented a mobile app automation framework from scratch using Appium, WDIO, and TypeScript. Reviewed team code for regression and sanity suites to reduce manual testing effort.</div>
-              <div>- Set up and managed an in-house device lab with over 50 devices using Kobiton and Appium Hub for automation execution.</div>
-              <div>- Settlement Improvement: Manual Testing with custom SQL queries on OmniDB for confirming database values and expected output.</div>
-              <div>- Hands-on experience with the Katalon scriptless automation tool and the TestOps reporting and analysis platform. Created and maintained a regression suite with 600 test cases.</div>
-              <div>- Hands-on experience with backend functional API testing projects using Newman and Postman.</div>
-              <div>- Implemented and maintained GitLab CI pipelines, including YAML configuration for daily automated execution and on-demand runs from other teams.</div>
-              <div>- Integrated Teams, Allure, TestRail, Email, and Confluence APIs for automated test result reporting.</div>
-              <div className="text-gray-500">
-                Tech Stack: Internal AI Tool (GPT4.0), Confluence, Newman, Postman, Mocha, TypeScript, WDIO, AppiumHub, Robot Arm, UIAutomator2, RestAPI, Mocha, OmniDB, SQL Query, MySQL, Excel.
-              </div>
-            </div>
+            {showRakuten && (
+              <>
+                <span className="font-semibold text-gray-900">
+                  Software QA Engineer - Permanent (March 2024 - present)
+                </span>
+                <br />
+                <span className="font-semibold text-gray-900">
+                  Software QA Engineer - Temporary (October 2021 - February 2024)
+                </span>
+                <div className="ml-5 text-gray-800 space-y-1 mt-1">
+                  <div>- Analyzed AI-generated backend API IT test cases to assess coverage and quality, collaborating with developers to enhance the AI testing tool.</div>
+                  <div>- Led Agile QA teams (Manual & Automation), planned testing, developed automation, and communicated directly with stakeholders.</div>
+                  <div>- Automated and maintained scripts for 24/7 testing of R Pay&apos;s Android app barcode payment system, leveraging Robotic ARM technology for barcode scanning and API integration for payment processing, to ensure system stability.</div>
+                  <div>- Designed and implemented a mobile app automation framework from scratch using Appium, WDIO, and TypeScript. Reviewed team code for regression and sanity suites to reduce manual testing effort.</div>
+                  <div>- Set up and managed an in-house device lab with over 50 devices using Kobiton and Appium Hub for automation execution.</div>
+                  <div>- Settlement Improvement: Manual Testing with custom SQL queries on OmniDB for confirming database values and expected output.</div>
+                  <div>- Hands-on experience with the Katalon scriptless automation tool and the TestOps reporting and analysis platform. Created and maintained a regression suite with 600 test cases.</div>
+                  <div>- Hands-on experience with backend functional API testing projects using Newman and Postman.</div>
+                  <div>- Implemented and maintained GitLab CI pipelines, including YAML configuration for daily automated execution and on-demand runs from other teams.</div>
+                  <div>- Integrated Teams, Allure, TestRail, Email, and Confluence APIs for automated test result reporting.</div>
+                  <div className="text-gray-500">
+                    Tech Stack: Internal AI Tool (GPT4.0), Confluence, Newman, Postman, Mocha, TypeScript, WDIO, AppiumHub, Robot Arm, UIAutomator2, RestAPI, Mocha, OmniDB, SQL Query, MySQL, Excel.
+                  </div>
+                </div>
+              </>
+            )}
           </div>
+          {/* AXAS CO., LTD. */}
           <div className="mb-4">
-            <h3 className="font-bold text-gray-900">AXAS CO., LTD. | Tokyo</h3>
+            <div
+              className="flex items-center gap-2 cursor-pointer hover:underline"
+              onClick={() => setShowAXAS((v) => !v)}
+            >
+              <span className={`transition-transform duration-200 ${showAXAS ? "rotate-90" : ""}`}>
+                ▶
+              </span>
+              <h3 className="font-bold text-gray-900">
+                AXAS CO., LTD. | Tokyo
+              </h3>
+              <button
+                className="ml-2 text-xs text-blue-600 underline focus:outline-none"
+                tabIndex={-1}
+                aria-label={showAXAS ? "Hide details" : "Show details"}
+              >
+                {showAXAS ? "Hide details" : "Show details"}
+              </button>
+            </div>
             <p className="italic text-gray-700">February 2020 - February 2024</p>
-            <span className="font-semibold text-gray-900">
-              Software Engineer - Permanent (February 2020 - February 2024)
-            </span>
-            <div className="ml-5 text-gray-800 space-y-1 mt-1">
-              <div>- Debugged developed smartphone game projects by playing, checking specifications, game operations, individual functions, event stories, and game characters on iOS and Android devices, reporting bugs to the Development team.</div>
-              <div>- Expense management system: system testing phase.</div>
-              <div>- Managed a Kitting project, involving setup, app installation, recovery, and troubleshooting for customer PC and mobile devices.</div>
-              <div className="text-gray-500">
-                Tech Stack: SQL Server, a5:sql, Redmine, chrome.
-              </div>
-            </div>
+            {showAXAS && (
+              <>
+                <span className="font-semibold text-gray-900">
+                  Software Engineer - Permanent (February 2020 - February 2024)
+                </span>
+                <div className="ml-5 text-gray-800 space-y-1 mt-1">
+                  <div>- Debugged developed smartphone game projects by playing, checking specifications, game operations, individual functions, event stories, and game characters on iOS and Android devices, reporting bugs to the Development team.</div>
+                  <div>- Expense management system: system testing phase.</div>
+                  <div>- Managed a Kitting project, involving setup, app installation, recovery, and troubleshooting for customer PC and mobile devices.</div>
+                  <div className="text-gray-500">
+                    Tech Stack: SQL Server, a5:sql, Redmine, chrome.
+                  </div>
+                </div>
+              </>
+            )}
           </div>
+          {/* SHIFT ASIA CO., LTD */}
           <div className="mb-4">
-            <h3 className="font-bold text-gray-900">SHIFT ASIA CO., LTD (Subsidiary of SHIFT Inc) | Ho Chi Minh City</h3>
-            <p className="italic text-gray-700">October 2018 - December 2019</p>
-            <span className="font-semibold text-gray-900">
-              Test Design Engineer - Permanent (October 2018 - December 2019)
-            </span>
-            <div className="ml-5 text-gray-800 space-y-1 mt-1">
-              <div>- Designed test cases for manual testing based on Shift format rules.</div>
-              <div>- HRM system of NEC: Performed integration testing that utilized Java debug tools for code business logic validation, performing database CRUD checks, managing batch files, and creating SQL queries for database value confirmation.</div>
-              <div>- Served as a Bridge SE for 8 months onsite in Japan on a system test project, supporting project progress management, facilitating requirement transfer between the Vietnam QA and Japan Development teams, and reviewing test cases designed by the Vietnam team.</div>
-              <div className="text-gray-500">
-                Technologies & Tools Used: SQL Server, Java, Excel, Backlog, Eclipse, Slack, Jira.
-              </div>
+            <div
+              className="flex items-center gap-2 cursor-pointer hover:underline"
+              onClick={() => setShowShiftAsia((v) => !v)}
+            >
+              <span className={`transition-transform duration-200 ${showShiftAsia ? "rotate-90" : ""}`}>
+                ▶
+              </span>
+              <h3 className="font-bold text-gray-900">
+                SHIFT ASIA CO., LTD | Ho Chi Minh City
+              </h3>
+              <button
+                className="ml-2 text-xs text-blue-600 underline focus:outline-none"
+                tabIndex={-1}
+                aria-label={showShiftAsia ? "Hide details" : "Show details"}
+              >
+                {showShiftAsia ? "Hide details" : "Show details"}
+              </button>
             </div>
+            <p className="italic text-gray-700">October 2018 - December 2019</p>
+            {showShiftAsia && (
+              <>
+                <span className="font-semibold text-gray-900">
+                  Test Design Engineer - Permanent (October 2018 - December 2019)
+                </span>
+                <div className="ml-5 text-gray-800 space-y-1 mt-1">
+                  <div>- Designed test cases for manual testing based on Shift format rules.</div>
+                  <div>- HRM system of NEC: Performed integration testing that utilized Java debug tools for code business logic validation, performing database CRUD checks, managing batch files, and creating SQL queries for database value confirmation.</div>
+                  <div>- Served as a Bridge SE for 8 months onsite in Japan on a system test project, supporting project progress management, facilitating requirement transfer between the Vietnam QA and Japan Development teams, and reviewing test cases designed by the Vietnam team.</div>
+                  <div className="text-gray-500">
+                    Technologies & Tools Used: SQL Server, Java, Excel, Backlog, Eclipse, Slack, Jira.
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </section>
 
