@@ -71,78 +71,57 @@ export default function Home() {
             Work Experience
           </h2>
           <div className="mb-4">
-            <h3 className="font-bold">Rakuten Payment, Inc. | Tokyo</h3>
-            <p className="italic text-gray-600">October 2021 - present</p>
-            <ul className="ml-5 space-y-1">
-              <li>
-                <span className="font-semibold">
-                  Software QA Engineer - Permanent (March 2024 - present)
-                </span>
-                <br />
-                <span className="font-semibold">
-                  Software QA Engineer - Temporary (October 2021 - February 2024)
-                </span>
-                <div className="ml-3 text-gray-800">
-                  - Analyzed AI-generated backend API IT test cases to assess
-                  coverage and quality, collaborating with developers to enhance
-                  the AI testing tool.
-                  <br />
-                  - Led Agile QA teams (Manual & Automation), planned testing,
-                  developed automation, and communicated directly with
-                  stakeholders.
-                  <br />
-                  - Automated and maintained scripts for 24/7 testing of R Pay&#39;s
-                  Android app barcode payment system, leveraging Robotic ARM
-                  technology for barcode scanning and API integration for payment
-                  processing, to ensure system stability.
-                  <br />
-                  - Designed and implemented a mobile app automation framework from
-                  scratch using Appium, WDIO, and TypeScript. Reviewed team code
-                  for regression and sanity suites to reduce manual testing
-                  effort.
-                  <br />
-                  - Set up and managed an in-house device lab with over 50 devices
-                  using Kobiton and Appium Hub for automation execution.
-                  <br />
-                  - Settlement Improvement: Manual Testing with custom SQL queries on
-                  OmniDB for confirming database values and expected output.
-                  <br />
-                  - Hands-on experience with the Katalon scriptless automation tool
-                  and the TestOps reporting and analysis platform. Created and
-                  maintained a regression suite with 600 test cases.
-                  <br />
-                  - Hands-on experience with backend functional API testing projects
-                  using Newman and Postman.
-                  <br />
-                  - Implemented and maintained GitLab CI pipelines, including YAML
-                  configuration for daily automated execution and on-demand runs
-                  from other teams.
-                  <br />
-                  - Integrated Teams, Allure, TestRail, Email, and Confluence APIs
-                  for automated test result reporting.
-                  <br />
-                  <span className="text-gray-500">
-                    Tech Stack: Internal AI Tool (GPT4.0), Confluence, Newman,
-                    Postman, Mocha, TypeScript, WDIO, AppiumHub, Robot Arm,
-                    UIAutomator2, RestAPI, Mocha, OmniDB, SQL Query, MySQL,
-                    Excel.
-                  </span>
-                </div>
-              </li>
-            </ul>
-            <div className="mt-2">
-              <span className="font-semibold">Achievements:</span>
-              <ul className="list-disc ml-5">
-                <li>
-                  Achieved Payment Project Award for RPC project-2025/04 (Increased
-                  app onboarding conversion rate 6.7%)
-                </li>
-                <li>
-                  Achieved Payment Project Award for End to End automation testing
-                  project 2022/02 (Covered 60% functions of R Pay, able to reduce
-                  manual efforts)
-                </li>
-              </ul>
+            <h3 className="font-bold text-gray-900">Rakuten Payment, Inc. | Tokyo</h3>
+            <p className="italic text-gray-700">October 2021 - present</p>
+            <span className="font-semibold text-gray-900">
+              Software QA Engineer - Permanent (March 2024 - present)
+            </span>
+            <br />
+            <span className="font-semibold">
+              Software QA Engineer - Temporary (October 2021 - February 2024)
+            </span>
+            <div className="ml-3 text-gray-800">
+              - Analyzed AI-generated backend API IT test cases to assess coverage
+              and quality, collaborating with developers to enhance the AI testing
+              tool.
+              <br />
+              - Led Agile QA teams (Manual & Automation), planned testing,
+              developed automation, and communicated directly with stakeholders.
+              <br />
+              - Automated and maintained scripts for 24/7 testing of R Pay&#39;s
+              Android app barcode payment system, leveraging Robotic ARM technology
+              for barcode scanning and API integration for payment processing, to
+              ensure system stability.
+              <br />
+              - Designed and implemented a mobile app automation framework from
+              scratch using Appium, WDIO, and TypeScript. Reviewed team code for
+              regression and sanity suites to reduce manual testing effort.
+              <br />
+              - Set up and managed an in-house device lab with over 50 devices using
+              Kobiton and Appium Hub for automation execution.
+              <br />
+              - Settlement Improvement: Manual Testing with custom SQL queries on
+              OmniDB for confirming database values and expected output.
+              <br />
+              - Hands-on experience with the Katalon scriptless automation tool and
+              the TestOps reporting and analysis platform. Created and maintained a
+              regression suite with 600 test cases.
+              <br />
+              - Hands-on experience with backend functional API testing projects
+              using Newman and Postman.
+              <br />
+              - Implemented and maintained GitLab CI pipelines, including YAML
+              configuration for daily automated execution and on-demand runs from
+              other teams.
+              <br />
+              - Integrated Teams, Allure, TestRail, Email, and Confluence APIs for
+              automated test result reporting.
+              <br />
+              <span className="text-gray-500">
+                Tech Stack: Internal AI Tool (GPT4.0), Confluence, Newman,
+                Postman, Mocha, TypeScript, WDIO, AppiumHub, Robot Arm,
+                UIAutomator2, RestAPI, Mocha, OmniDB, SQL Query, MySQL, Excel.
+              </span>
             </div>
           </div>
           <div className="mb-4">
