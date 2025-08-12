@@ -132,7 +132,7 @@ export default function Home() {
                       <div>- Implemented and maintained GitLab CI pipelines, including YAML configuration for daily automated execution and on-demand runs from other teams.</div>
                       <div>- Integrated Teams, Allure, TestRail, Email, and Confluence APIs for automated test result reporting.</div>
                       <div className="text-gray-500">
-                        Tech Stack: Internal AI Tool (GPT4.0), Confluence, Newman, Postman, Mocha, TypeScript, WDIO, AppiumHub, Robot Arm, UIAutomator2, XCUITest,RestAPI, Mocha, OmniDB, SQL Query, MySQL, Excel.
+                        Tech Stack: Internal AI Tool (GPT4.0), Confluence, Newman, Postman, Mocha, TypeScript, WDIO, AppiumHub, RobotArm, UIAutomator2, XCUITest,RestAPI, Mocha, OmniDB, SQL Query, MySQL, Excel.
                       </div>
                     </div>
                   </>
@@ -245,7 +245,7 @@ export default function Home() {
             {/* Mobile Automation Architecture */}
             <section>
               <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
-                Mobile App Automation Architecture at Rakuten Payment
+                Mobile App UI Automation Testing Architecture
               </h2>
               
               {/* Architecture Diagram */}
